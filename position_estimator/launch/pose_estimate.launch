@@ -1,0 +1,12 @@
+<launch>
+
+	<node pkg="position_estimator" type="position_estimator" name="position_estimator" output="screen">
+		<param name="Filter_Gain_Kx" value="1"/>
+		<param name="Filter_Gain_Ky" value="1"/>	
+		<param name="Filter_Gain_Kz" value="1"/>
+		<param name="Attitude_LPF_ON" value="true"/>	
+		<param name="K_LPF" value="1"/>		
+		<param name="Sim" value="true"/>
+	</node> 
+
+</launch>
